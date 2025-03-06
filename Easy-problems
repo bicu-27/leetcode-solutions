@@ -83,7 +83,8 @@ class Solution(object):
 x = 4
 solution = Solution()
 result = solution.mySqrt(x)
-print(result)
+print(result
+
 
 
 print(f"First index = {first}, Last index = {last}")
