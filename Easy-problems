@@ -65,6 +65,26 @@ target = 2
 
 first = find_first(arr, target)
 last = find_last(arr, target)
+# leetcode 69
+class Solution(object):
+    def mySqrt(self, x):
+        low = 0
+        high = x
+        while low <= high:
+            mid = (low + high)//2
+            if mid * mid == x:
+                return mid
+            elif mid * mid > x:
+                low = mid + 1
+            else:
+                high = mid -1
+        return mid//2 -2
+        
+x = 4
+solution = Solution()
+result = solution.mySqrt(x)
+print(result)
+
 
 print(f"First index = {first}, Last index = {last}")
 
