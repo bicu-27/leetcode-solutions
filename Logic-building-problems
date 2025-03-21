@@ -4,3 +4,12 @@ class Solution:
             return True
         else:
             return False 
+
+# Question three 
+class Solution:
+def seriesSum(self, n : int) -> int:
+        n = 1/2*n**2 + 1/2 *n
+        return int(round(n))
+solution = Solution()
+solution.seriesSum(4)
+      
